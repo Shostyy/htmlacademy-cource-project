@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <header class = "main-header">
+        <nav class = "main-navigation">
+            <ul class="main-logo">
+                <li>
+                    <a href = "#" class="main-header-logo">
+                        <!--logo background here-->
+                    </a>
+                </li>
+            </ul>
+            <ul class = "site-navigation">
+                <li><a href = "#">Каталог</a></li>
+                <li><a href = "#">Доставка и оплата</a></li>
+                <li><a href = "#">О компании</a></li>
+            </ul>
+            <ul class="user-navigation">
+                <li class = "main-search"><a href = "#"><span class = "visually-hidden"></span></a></li>
+                <li class = "main-login"><a href = "#">Вход</a></li>
+                <li class = "main-cart"><a href = "#">Корзина</a></li>
+            </ul>
+        </nav>
+                <span class="icecream-time-working">
+                    С 10 до 20, ежедневно
+                </span>
+                <span class="icecream-number-phone">
+                    8 812 450-25-25
+                </span>
+    </header>  
+    
+    <main class="main-catalog">
+        
+        <div class="bread-list">
+            <ul class = "bread-crumbs">
+                <li class="bread-point"><a href="">Главная</a></li>
+                <li class="bread-point"><a href="">Каталог</a></li>
+                <li class="bread-point"><a href="">Сливочное</a></li>
+            </ul>
+        </div>
+        
+        <section class="search-parameter">
+           <h2 class="visually-hidden">Параметры поиска товара</h2>
+            <form action="echo.htmlacademy.ru">
+                <select name="order-by" id="sort-by">
+                    <option value="">По популярности</option>
+                    <option value="">От дорогих к дешевым</option>
+                    <option value="">От дешевых к дорогим</option>
+                </select>
+                <input type="range" id = "value-range" class = "catalog-range" min = "100" max = "500" step = "0.1">
+                
+                <ul class="fat-change">
+                    <li class="fat-value">
+                        <label><input type="radio" class="" name="fat" value="0">0%</label>
+                    </li>
+                    <li class="fat-value">
+                        <label><input type="radio" class="" name="fat" value="10">10%</label>
+                    </li>
+                    <li class="fat-value">
+                        <label><input type="radio" class="" name="fat" value="30">30%</label>
+                    </li>
+                    <li class="fat-value">
+                        <label><input type="radio" class="" name="fat" value="31">Больше 30%</label>
+                    </li>
+                </ul>
+                
+                <ul class="icecream-filler">
+                    <li class = "filler-value">
+                        <label><input type="checkbox" name = "filler" value = "chokolate" checked>Шоколад</label>
+                    </li>
+                    <li class = "filler-value">
+                         <label><input type="checkbox" name = "filler" value = "shugar">Сахарная присыпка</label>
+                    </li>
+                    <li class = "filler-value">
+                        <label><input type="checkbox" name = "filler" value = "fruit">Фрукты</label>
+                    </li>
+                    <li class = "filler-value">
+                        <label><input type="checkbox" name = "filler" value = "syrup">Сиропы</label>
+                    </li>
+                    <li class = "filler-value">
+                        <label><input type="checkbox" name = "filler" value = "jam">Джемы</label>
+                    </li>
+                </ul>
+            
+                <button type = "submit">Применить</button>
+            </form>
+        </section>
+        
+        <section class = "main-catalog">
+           <h2 class="visually-hidden">Каталог мороженного</h2>
+            <ul class="icecream-catalog">
+                <li>
+                    <a href = "#" class="main-catalog-link">
+                        <span class="main-catalog-value">310Р</span>
+                        <span class="main-catalog-units">/кг</span>
+                        <img src="img/catalog-image/creamy-orange.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                        Сливочное с апельсиновым джемом и цитрусовой стружкой
+                    </a>
+                </li>
+                <li>
+                    
+                    <a href = "#" class="main-catalog-link">
+                        <span class="main-catalog-value">380Р</span>
+                        <span class="main-catalog-units">/кг</span>
+                        <img src="img/catalog-image/creamy-cofee.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+                        Сливочно-кофейное с кусочками шоколада
+                    </a>
+                </li>
+                <li>
+                    <a href = "#" class="main-catalog-link">
+                        <span class="main-catalog-value">355Р</span>
+                        <span class="main-catalog-units">/кг</span>
+                        <img src="img/catalog-image/creamy-strawberry.jpg" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
+                        Сливочно-клубничное с присыпкой из белого шоколада
+                    </a>
+                </li>
+                <li>
+                    <a href = "#" class="main-catalog-link">
+                        <span class="main-catalog-value">415Р</span>
+                        <span class="main-catalog-units">/кг</span>
+                        <img src="img/catalog-image/crem-brule.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
+                        Сливочное крем-брюле с карамельной подливкой
+                    </a>
+                </li>
+                <li>
+                    <a href = "#" class="main-catalog-link">
+                        <span class="main-catalog-value">325Р</span>
+                        <span class="main-catalog-units">/кг</span>
+                        <img src="img/catalog-image/creamy-cowbery.jpg" alt="Сливочное с брусничным джемом">
+                        Сливочное с брусничным джемом
+                    </a>
+                </li>
+                <li>
+                    <a href = "#" class="main-catalog-link">
+                        <span class="main-catalog-value">410Р</span>
+                        <span class="main-catalog-units">/кг</span>
+                        <img src="img/catalog-image/creamy-billberry.jpg" alt="Сливочно-черничное с цельными ягодами черники">
+                        Сливочно-черничное с цельными ягодами черники
+                    </a>
+                </li>
+                <li>
+                    <a href = "#" class="main-catalog-link">
+                        <span class="main-catalog-value">375Р</span>
+                        <span class="main-catalog-units">/кг</span>
+                        <img src="img/catalog-image/creamy-lemon-caramel.jpg" alt="Сливочно-лимонное с карамельной присыпкой">
+                        Сливочно-лимонное с карамельной присыпкой
+                    </a>
+                </li>
+                <li>
+                    <a href = "#" class="main-catalog-link">
+                        <span class="main-catalog-value">320Р</span>
+                        <span class="main-catalog-units">/кг</span>
+                        <img src="img/catalog-image/creamy-chocolate-topping.jpg" alt="Сливочное с шоколадной стружкой">
+                        Сливочное с шоколадной стружкой
+                    </a>
+                </li>
+                <li>
+                    <a href = "#" class="main-catalog-link">
+                        <span class="main-catalog-value">440Р</span>
+                        <span class="main-catalog-units">/кг</span>
+                        <img src="img/catalog-image/creamy-vanilla-chocolate.jpg" alt="Сливочно-ванильное с кусочками шоколада">
+                        Сливочно-ванильное с кусочками шоколада
+                    </a>
+                </li>
+                <li>
+                    <a href = "#" class="main-catalog-link">
+                        <span class="main-catalog-value">435Р</span>
+                        <span class="main-catalog-units">/кг</span>
+                        <img src="img/catalog-image/creamy-mentol.jpg" alt="Сливочноe с ментоловым сиропом">
+                        Сливочно-клубничное с присыпкой из белого шоколада
+                    </a>
+                </li>
+                <li>
+                    <a href = "#" class="main-catalog-link">
+                        <span class="main-catalog-value">355Р</span>
+                        <span class="main-catalog-units">/кг</span>
+                        <img src="img/catalog-image/creamy-black-chocolate.jpg" alt="Сливочное с кусочками черного шоколада">
+                        Сливочное с кусочками черного шоколада
+                    </a>
+                </li>
+                <li>
+                    <a href = "#" class="main-catalog-link">
+                        <span class="main-catalog-value">420Р</span>
+                        <span class="main-catalog-units">/кг</span>
+                        <img src="img/catalog-image/creamy-mint.jpg" alt="Сливочное с мятным сиропом">
+                        Сливочное с мятным сиропом
+                    </a>
+                </li>
+            </ul>
+            <ul class="number-page">
+                <li class="switch-page"><a href="">1</a></li>
+                <li class="switch-page"><a href="">2</a></li>
+                <li class="switch-page"><a href="">3</a></li>
+                <li class="switch-page"><a href="">4</a></li>
+                <li class="switch-page"><a href="">5</a></li>
+                <li class="switch-page"><a href="">></a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <section class="social">
+           <h2 class="visually-hidden">Ссылка на наши страницы в социальных сетях</h2>
+            <ul class = "social-link">
+                <li><a href = "#"><img src="img/twitter.png" alt="twitter">Twitter</a></li>
+                <li><a href = "#"><img src="img/instagramm.png" alt="instagramm">Instagramm</a></li>
+                <li><a href = "#"><img src="img/facebook.png" alt="facebook">Facebook</a></li>
+                <li><a href = "#"><img src="img/vkontakte.png" alt="vkontakte">Vk</a></li>
+            </ul>
+        </section>
+        
+        <section class="information">
+           <h2 class="visually-hidden">Информация для поставщиков и потребителей</h2>
+            <ul class="information-for-users">
+                <li><a href = "#">Для поставщиков</a></li>
+                <li><a href = "#">Нащи документы</a></li>
+                <li><a href = "#">О производстве</a></li>
+                <li><a href = "#">Экологические стандарты</a></li>
+            </ul>
+        </section>
+        
+        <section class="developer">
+           <h2 class="visually-hidden">Информация о разработчике сайта</h2>
+            <img src="img/htmlacademy.png" alt="HTML academy" class="developer-logo">
+            <p class="developer-info">Сделано в HTML Academy &copy;</p>
+        </section>
+    </footer>
+    
+    
+    <section class="login">
+        <h2 class="visually-hidden">Вход в личный кабинет</h2>
+        <form action="echo.htmlacademy.ru">
+            <input type="email" class="login-email" value = "Электронная почта">
+            <input type="password" class = "login-password">
+            <button>Войти</button>
+            <a href="#" class = "login/forgot-password">Забыли пароль?</a>
+            <a href="#" class = "login-new-user">Новая регистрация</a>
+        </form>
+    </section>
+    
+    <section class="search">
+        <h2 class="visually-hidden">Поиск по сайту</h2>
+        <input type="text" value = "Что ищем?">
+    </section>
+    
+    <section class="feedback">
+        <h2 class="feedback-heading">Мы обязательно вам ответим</h2>
+        <input type="text" value = "Как вас зовут?">
+        <input type="email" value = "Ваша почта для ответа?">
+        <textarea name="feedback-area" id="feedback" cols="30" rows="10">Напишите что нибудь</textarea>
+        <button class = "feedback-send">Отправить</button>
+    </section>
+</body>
+</html>

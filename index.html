@@ -7,16 +7,20 @@
 <body>
     <header class = "main-header">
         <nav class = "main-navigation">
-            <a href = "#" class="main-header-logo">
-                <img src="img/logo.png" alt="Логотип gllacy shop">
-            </a>
+            <ul class="main-logo">
+                <li>
+                    <a href = "#" class="main-header-logo">
+                        <!--logo background here-->
+                    </a>
+                </li>
+            </ul>
             <ul class = "site-navigation">
                 <li><a href = "#">Каталог</a></li>
                 <li><a href = "#">Доставка и оплата</a></li>
                 <li><a href = "#">О компании</a></li>
             </ul>
             <ul class="user-navigation">
-                <li class = "main-search"><a href = "#">Поиск</a></li>
+                <li class = "main-search"><a href = "#"><span class = "visually-hidden"></span></a></li>
                 <li class = "main-login"><a href = "#">Вход</a></li>
                 <li class = "main-cart"><a href = "#">Корзина</a></li>
             </ul>
@@ -33,14 +37,26 @@
        <h1 class="visually-hidden">Интернет магазин мороженого gllacy shop</h1>
            
             <section class="icecream-slider">
-               <h2 class = visually-hidden>Презентация мороженного</h2>
+                <h2 class = visually-hidden>Очень вкусное морожннное</h2>
+
                 <p class="icecream-slogan">Крем-брюле и пломбир с малиновым джемом</p>
-                <img src="img/topside.png" alt="Мороженое в рожке">
+               
                 <a href = "#" class="icecream-promotion">Давайте оба!</a>
+                <ul class="slide-switches">
+                    <li class="slide-radio">
+                        <button class="slode-btn">Первый слайд</button>
+                    </li>
+                    <li class="slide-radio">
+                        <button class="slode-btn">Второй слайд</button>
+                    </li>
+                    <li class="slide-radio">
+                        <button class="slode-btn">Третий слайд</button>
+                    </li>
+                </ul>
             </section>
             
             <section class="promo">
-               <h2 class="visually-hidden">Акционные  предложения</h2>
+               <h2 class="visually-hidden">Акционные предложения</h2>
                 <ul class="promo-block">
                     <li>
                         <img src="img/raspberries.jpg" alt="Малина" class="promo-raspberries">
@@ -176,11 +192,13 @@
     
     <section class="login">
         <h2 class="visually-hidden">Вход в личный кабинет</h2>
-        <input type="email" class="login-email" value = "Электронная почта">
-        <input type="password" class = "login-password">
-        <button>Войти</button>
-        <a href="#" class = "login/forgot-password">Забыли пароль?</a>
-        <a href="#" class = "login-new-user">Новая регистрация</a>
+        <form action="echo.htmlacademy.ru">
+            <input type="email" class="login-email" value = "Электронная почта">
+            <input type="password" class = "login-password">
+            <button>Войти</button>
+            <a href="#" class = "login/forgot-password">Забыли пароль?</a>
+            <a href="#" class = "login-new-user">Новая регистрация</a>
+        </form>
     </section>
     
     <section class="search">
@@ -192,7 +210,7 @@
         <h2 class="feedback-heading">Мы обязательно вам ответим</h2>
         <input type="text" value = "Как вас зовут?">
         <input type="email" value = "Ваша почта для ответа?">
-        <textarea name="feedback-area" id="feedback" cols="30" rows="10"></textarea>
+        <textarea name="feedback-area" id="feedback" cols="30" rows="10">Напишите что нибудь</textarea>
         <button class = "feedback-send">Отправить</button>
     </section>
 </body>
