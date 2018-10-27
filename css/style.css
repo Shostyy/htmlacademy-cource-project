@@ -1,0 +1,303 @@
+@font-face {
+font-family: 'Myriad Pro Regular';
+src: url('../fonts/MyriadPro-Regular.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Myriad Pro Regular', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #ffffff;
+    
+    
+    background-color: #849d8f;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+a {
+    text-decoration: none;
+}
+/*
+MAIN MENU
+*/
+.site-navigation, .navigation-submenu, .user-navigation {
+	list-style-type: none;
+}
+.site-navigation a, .user-navigation a {
+    color: #ffffff;
+}
+.navigation-submenu a{
+    color: #333333;
+    background-color: #f7f6f3;
+}
+.site-navigation a, .navigation-submenu a{
+    font-size: 16px;
+    line-height: 18px;
+}
+.user-navigation a{
+	background-color: #a1b4a9;
+    font-size: 14px;
+    line-height: 16px;
+}
+.site-navigation a:hover{
+	background-color: #f7f6f3;
+    color: #333333;
+}
+.navigation-submenu a:hover{
+	background-color: #fbded7;
+}
+.user-navigation a:hover{
+	background-color: #f8f7f4;
+}
+
+/*
+UNDER HEADER
+*/
+.icecream-time-working {
+	font-size: 14px;
+    line-height: 16px;
+    float: right;
+}
+.icecream-number-phone {
+    font-size: 22px;
+    line-height: 24px;
+    float: right;
+    clear: both;
+}
+
+/*
+SLIDER
+*/
+.icecream-slider {
+    background-image: url(../img/topside.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icecream-slogan {
+	font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.icecream-promotion, .promo-link, .button{
+    font: inherit;
+    color: #ffffff;
+    background-color: #ed5a3d;
+    border: none;
+}
+.icecream-promotion:hover, .promo-link:hover, .button:hover{
+    background-color: #f07a63;
+}
+.icecream-promotion{
+    font-size: 32px;
+    line-height: 44px;
+}
+.slide-switches {
+	list-style-type: none;
+}
+.slide-btn {
+    display: block;
+	width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    background-color: rgba(0,0,0,0);
+    border-radius: 10px;
+}
+.slide-active{
+    background-color: rgb(255,255,255);
+}
+/*
+PROMOTION
+*/
+.promo-block {
+    list-style-type: none;
+}
+.promo-raspberries {
+    background-color: #cf526a;
+	background-image: url("../img/raspberries.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.promo-chocolate {
+    background-color: #684434;
+	background-image: url("../img/chocolate.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.promo .promo-slogan {
+    font-size: 35px;
+    line-height: 41px;
+}
+.promo .promo-conditions {
+    font-size: 18px;
+    line-height: 22px;
+}
+.promo .promo-link {
+    font-size: 18px;
+    line-height: 24px;
+}
+/*
+MOST POPULAR
+*/
+.most-popular-list {
+	list-style-type: none;
+}
+.most-popular-value{
+    font-size: 45px;
+    line-height: 45px;
+}
+.most-popular-value::after{
+    content: "₽";
+    font-weight: 700;
+}
+.most-popular-units {
+    font-size: 32px;
+}
+.most-popular-list img{
+    border-radius: 50%;
+}
+.most-popular-list a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    text-decoration: underline;
+}
+/*
+DESCRIPTION SHOP
+*/
+.description {
+    color: #323232;
+    
+	background-color: #eee1c6;
+    background-image: url("../img/vaffle.jpg");
+    background-repeat: repeat;
+    background-position: 0 0;
+}
+.description ul{
+    list-style-type: none;
+}
+.description li:nth-child(1){
+    list-style-image: url(../img/icecream.png);
+}
+.description li:nth-child(2){
+    list-style-image: url(../img/list.png);
+}
+.description li:nth-child(3){
+    list-style-image: url(../img/cow.png);
+}
+.description li:nth-child(4){
+    list-style-image: url(../img/temperatute.png);
+}
+.description-slogan {
+	font-size: 24px;
+    line-height: 30px;
+}
+.description p {
+    font-size: 16px;
+    line-height: 22px;
+    width: 325px;
+}
+/*
+ARTICLE SHERBET
+*/
+.laying {
+    background-color: #ffffff;
+}
+.laying .caption{
+    font-size: 16px;
+    line-height: 22px;
+    color: #5a5a5a;
+}
+.laying a{
+    color: #353535;
+    font-size: 24px;
+    line-height: 30px;
+    text-decoration: underline;
+    background: rgba(255, 255, 255, 0.1);
+}
+/*
+DISPATH
+*/
+.dispatch {
+    background: #d4d9d4;
+}
+.dispatch-text {
+	color: #5a5a5a;
+    font-size: 16px;
+    line-height: 22px;
+}
+input[type=text], input[type=email], input[type=password] {
+	border: 1px solid #d3d3d2;
+    margin: 1px;
+    color: #c6c6c6;
+}
+input:hover {
+    margin: 0px;
+    border: 2px solid #c7c6c5;
+}
+input:focus{
+    color: #323232;
+}
+/*
+MAPS
+*/
+.adress {
+    color: #323232;
+}
+.adress-top, .adress-previev {
+    font-size: 14px;
+    line-height: 20px;
+}
+.adress-main{
+    font-size: 18px;
+    line-height: 24px;
+}
+.adress-phone {
+    font-size: 18px;
+    line-height: 22px;
+}
+.adress-time-working {
+    font-size: 14px;
+    line-height: 22px;
+}
+/*
+FOOTER
+*/
+.social-link, .information-for-users {
+	list-style-type: none;
+}
+.information-for-users a{
+    color: #ffffff;
+	font-size: 13px;
+    line-height: 18px;
+    text-decoration: underline;
+}
+.developer-info {
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 18px;
+}
+.underline{
+    text-decoration: underline;
+}
+/*
+DNISHE
+*/
+.login a{
+    color: #323232;
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration: underline;
+}

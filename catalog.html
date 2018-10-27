@@ -10,7 +10,7 @@
             <ul class="main-logo">
                 <li>
                     <a href = "#" class="main-header-logo">
-                        <!--logo background here-->
+                        <img src="img/logo.png" alt="Логотип gllacy">
                     </a>
                 </li>
             </ul>
@@ -43,32 +43,48 @@
             </ul>
         </div>
         
+        <h1 class = "catalog-top-slogan">Сливочное мороженое</h1>
+        
         <section class="search-parameter">
            <h2 class="visually-hidden">Параметры поиска товара</h2>
             <form action="echo.htmlacademy.ru">
-                <select name="order-by" id="sort-by">
-                    <option value="">По популярности</option>
-                    <option value="">От дорогих к дешевым</option>
-                    <option value="">От дешевых к дорогим</option>
-                </select>
-                <input type="range" id = "value-range" class = "catalog-range" min = "100" max = "500" step = "0.1">
-                
-                <ul class="fat-change">
-                    <li class="fat-value">
+              
+              
+               <div class="search-parameter-sort">
+                   <h3 class = "search-parameter-header">Сортировка</h3>
+                    <select name="order-by" id="sort-by">
+                        <option value="">По популярности</option>
+                        <option value="">От дорогих к дешевым</option>
+                        <option value="">От дешевых к дорогим</option>
+                    </select>
+               </div>
+               
+               <div class="search-parameter-value">
+                   <h3 class = "search-parameter-header">Цена: 100 руб. - 500 руб.</h3>
+                   <input type="range" id = "value-range" class = "catalog-range" min = "100" max = "500" step = "0.1">
+               </div>
+               
+               <div class="search-parameter-fat">
+                  <h3 class = "search-parameter-header">Цена: 100 руб. - 500 руб.</h3>
+                   <ul class="fat-change">
+                    <li class="fat-change-value">
                         <label><input type="radio" class="" name="fat" value="0">0%</label>
                     </li>
-                    <li class="fat-value">
+                    <li class="fat-change-value">
                         <label><input type="radio" class="" name="fat" value="10">10%</label>
                     </li>
-                    <li class="fat-value">
+                    <li class="fat-change-value">
                         <label><input type="radio" class="" name="fat" value="30">30%</label>
                     </li>
-                    <li class="fat-value">
+                    <li class="fat-change-value">
                         <label><input type="radio" class="" name="fat" value="31">Больше 30%</label>
                     </li>
                 </ul>
+               </div>
                 
-                <ul class="icecream-filler">
+                <div class="search-parameter-topping">
+                   <h3 class = "search-parameter-header">Наполнители:</h3>
+                    <ul class="icecream-filler">
                     <li class = "filler-value">
                         <label><input type="checkbox" name = "filler" value = "chokolate" checked>Шоколад</label>
                     </li>
@@ -84,7 +100,8 @@
                     <li class = "filler-value">
                         <label><input type="checkbox" name = "filler" value = "jam">Джемы</label>
                     </li>
-                </ul>
+                    </ul>
+                </div>
             
                 <button type = "submit">Применить</button>
             </form>
@@ -226,7 +243,7 @@
         <section class="developer">
            <h2 class="visually-hidden">Информация о разработчике сайта</h2>
             <img src="img/htmlacademy.png" alt="HTML academy" class="developer-logo">
-            <p class="developer-info">Сделано в HTML Academy &copy;</p>
+            <p class="developer-info">Сделано в </p>
         </section>
     </footer>
     
@@ -236,7 +253,7 @@
         <form action="echo.htmlacademy.ru">
             <input type="email" class="login-email" value = "Электронная почта">
             <input type="password" class = "login-password">
-            <button>Войти</button>
+            <button class = "button">Войти</button>
             <a href="#" class = "login/forgot-password">Забыли пароль?</a>
             <a href="#" class = "login-new-user">Новая регистрация</a>
         </form>
@@ -252,7 +269,7 @@
         <input type="text" value = "Как вас зовут?">
         <input type="email" value = "Ваша почта для ответа?">
         <textarea name="feedback-area" id="feedback" cols="30" rows="10">Напишите что нибудь</textarea>
-        <button class = "feedback-send">Отправить</button>
+        <button class = "button feedback-send">Отправить</button>
     </section>
 </body>
 </html>
